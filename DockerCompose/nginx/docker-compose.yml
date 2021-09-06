@@ -1,0 +1,18 @@
+version: "3.7" #versão de acordo com vDocker --> https://docs.docker.com/compose/compose-file/
+services: #definição dos nossos serviços
+  web: #primeiro service
+    image: nginx #imagem nginx
+    deploy:
+      replicas: 5   #quantidade de replicas
+      resources: #configurar os limites
+        limits:	
+          cpus: "0.1" #definição de cpu
+          memory: 50M #definição de memoria
+      restart_policy:
+        condition: on-failure #restartar o container em casos de falha
+    ports:
+    - "8080:80" 
+    networks: #declar rede
+    - webserver
+networks: #criar rede
+  webserver:

@@ -1,0 +1,8 @@
+# docker stack deploy -c docker-compose.yml nginx_compose
+# curl 0:8080
+# docker service ls
+# docker service ps primeiro_web
+# docker stack ls
+# docker stack services primeiro
+# docker stack ps primeiro
+# docker stack rm primeiro
