@@ -1,0 +1,7 @@
+# docker stack deploy -c docker-compose.yml wordpress_compose
+# docker stack ls
+# docker stack services segundo
+# docker service ls
+# docker service ps segundo_db
+# docker service ps segundo_wordpress
+# docker service logs segundo_wordpress
