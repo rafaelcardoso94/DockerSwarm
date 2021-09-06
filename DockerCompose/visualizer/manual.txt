@@ -1,0 +1,1 @@
+# Esse container trata-se de uma imagem de monitoração dos services, onde exibe em um painel o status de cada container.
